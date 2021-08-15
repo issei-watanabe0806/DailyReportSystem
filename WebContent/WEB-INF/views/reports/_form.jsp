@@ -14,15 +14,27 @@
 <input type="date" name="report_date" value="<fmt:formatDate value='${report.report_date}' pattern='yyyy-MM-dd' />" />
 <br /><br />
 
-<label for="name">氏名</label><br />
+<label for="starttime">時間</label><br />
+<input type="text" name="starttime" value="${report.starttime}" />
+<br /><br />
+
+<label for="opportunity">商談相手</label><br />
+<input type="text" name="opportunity" value="${report.opportunity}" />
+<br /><br />
+
+<label for="address">商談先住所</label><br />
+<input type="text" name="address" value="${report.address}" />
+<br /><br />
+
+<label for="name">商談者</label><br />
 <c:out value="${sessionScope.login_employee.name}" />
 <br /><br />
 
-<label for="title">タイトル</label><br />
+<label for="title">アクション内容</label><br />
 <input type="text" name="title" value="${report.title}" />
 <br /><br />
 
-<label for="content">内容</label><br />
+<label for="content">アクション内容詳細</label><br />
 <textarea name="content" rows="10" cols="50">${report.content}</textarea>
 <br /><br />
 

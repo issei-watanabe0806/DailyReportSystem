@@ -48,6 +48,7 @@ public class Report {
     @Column(name = "report_date", nullable = false)
     private Date report_date;
 
+
     @Column(name = "title", length = 255, nullable = false)
     private String title;
 
@@ -60,6 +61,15 @@ public class Report {
 
     @Column(name = "updated_at", nullable = false)
     private Timestamp updated_at;
+
+    @Column(name = "address", nullable = false)
+    private String address;
+
+    @Column(name = "opportunity", nullable = false)
+    private String opportunity;
+
+    @Column(name = "starttime", nullable = false)
+    private String starttime;
 
     public Integer getId() {
         return id;
@@ -116,4 +126,31 @@ public class Report {
     public void setUpdated_at(Timestamp updated_at) {
         this.updated_at = updated_at;
     }
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public String getOpportunity() {
+		return opportunity;
+	}
+
+	public void setOpportunity(String opportunity) {
+		this.opportunity = opportunity;
+	}
+
+	public String getStarttime() {
+		return starttime;
+	}
+
+	public void setStarttime(String starttime) {
+		this.starttime = starttime;
+	}
+
+
+
 }

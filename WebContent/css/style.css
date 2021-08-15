@@ -133,16 +133,29 @@ table#report_list .report_name {
     width: 20%;
     padding: 10px 2%;
 }
+
+table#report_list .report_opportunity {
+    width: 20%;
+}
+
 table#report_list .report_date {
     width: 20%;
 }
 
+table#report_list .report_starttime {
+    width: 17%;
+}
+
 table#report_list .report_title {
-    width: 37%;
+    width: 17%;
 }
 
 table#report_list .report_action {
     width: 13%;
+}
+
+table#report_list .report_address {
+    width: 10%;
 }
 
 pre {
